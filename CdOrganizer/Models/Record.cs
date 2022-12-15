@@ -8,8 +8,11 @@ namespace CdOrganizer.Models
     public int Id { get; }
     private static List<Record> _instances = new List<Record> {};
 
+    public List<Artist> Artists { get; set; }
+
     public Record(string title)
     {
+      Artists = new List<Artist> {};
       Title = title;
       _instances.Add(this);
       Id = _instances.Count;
