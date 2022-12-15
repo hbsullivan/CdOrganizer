@@ -10,9 +10,16 @@
       crossorigin="anonymous">
   </head>
   <body>
-    <h1>Welcome to the CD Organizer!</h1>
-    <h3><a href='/records'>View CDs</a></h3>
-    <br>
-    <h3><a href='/records/new'>Add a new CD</a></h3>
+    <h1>Add a CD</h1>
+    <p>Add a CD to your collection:</p>
+
+    <form action="/records" method="post">
+      <label for=recordTitle>Record Title</label>
+      <input id="recordTitle" name="recordTitle" type="text">
+      <button type="submit">Add</button>
+    </form>
+
+    <p><a href="/">Back home</a></p>
+    <p><a href="/categories">Back to CDs.</a></p>
   </body>
 </html>
